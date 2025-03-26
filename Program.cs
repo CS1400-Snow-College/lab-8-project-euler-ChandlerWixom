@@ -90,7 +90,7 @@ static void EvenFibonacci()
         recent = temp;
         if (temp < 4_000_000)
         {
-            if (temp % 2 == 0)
+            if (temp % 2 == 0) // checks if its even
             {
                 sum = sum + temp;
               Console.Write(temp + " ");
@@ -107,7 +107,44 @@ static void EvenFibonacci()
 //3
 static void PalindromeProduct()
 {
+    int tempPalindrom = 0;
+    int temp = 0;
+    for (int i = 100; i <1000; i ++)
+    {
 
+        for (int j = 100; j < 1000; j ++)
+        {
+
+
+            temp = i * j; 
+
+            string tempString = Convert.ToString(temp);
+            char[] forward = tempString.ToCharArray();
+            char[] backward = tempString.Reverse().ToArray();
+           
+
+
+            bool isPalondrom = false;
+            for ( int k = 0; k < forward.Length; k ++)
+            {
+                if (forward[k] != backward[k])
+                {
+                    isPalondrom = false;
+                    break;
+                }
+                else isPalondrom = true;
+
+            }
+            if (isPalondrom)
+            {
+                tempPalindrom = temp;
+                
+            }
+
+        }
+    }
+    Console.WriteLine("A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 x 99");
+    Console.WriteLine($"Find the largest palindrome made from the product of two 3-digit numbers.\n{tempPalindrom}");
 }
 
 
