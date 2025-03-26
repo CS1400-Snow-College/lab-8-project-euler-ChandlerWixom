@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab-8-project-euler-ChandlerWixom", "lab-8-project-euler-ChandlerWixom.csproj", "{5EB52A2E-6CC1-A59F-C159-2A33CE741FED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EB52A2E-6CC1-A59F-C159-2A33CE741FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB52A2E-6CC1-A59F-C159-2A33CE741FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB52A2E-6CC1-A59F-C159-2A33CE741FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB52A2E-6CC1-A59F-C159-2A33CE741FED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFE08F90-9044-41FD-8298-A77271B8AF81}
+	EndGlobalSection
+EndGlobal
