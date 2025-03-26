@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lab-8-project-euler-ChandlerWixom")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7855d5c0aac042ea24b232fad1726c1929024720")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa1137d316f18807f4f5fce4ea1215f981bd476f")]
 [assembly: System.Reflection.AssemblyProductAttribute("lab-8-project-euler-ChandlerWixom")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lab-8-project-euler-ChandlerWixom")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
