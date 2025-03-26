@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 do
 {
 Console.Clear();
-int problem = ReadNumber(5, 1);
+int problem = ReadNumber(4, 1);
 Console.Clear();
 
 switch (problem)
@@ -32,11 +32,6 @@ switch (problem)
 
         break;
 
-    case 5:
-        SquareDifference();
-
-        break;
-    
 }
 Console.ReadKey(true);
 } while (true);
@@ -151,16 +146,34 @@ static void PalindromeProduct()
 //4
 static void SmallestMultiple()
 {
+        Console.WriteLine("2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?");
 
+    int smallest;
+    for( int nextNumber = 1; ;nextNumber++)
+    {
+        bool pass = false;
+
+        for (int i = 1; i <=20; i++)
+        {
+            if (nextNumber % i != 0)
+            {
+                pass = false;
+                break;
+            }
+            else 
+            {
+                pass = true;
+            
+            }
+        }
+        if (pass)
+        {
+            smallest = nextNumber;
+            break;
+        }
+    }
+    Console.WriteLine(smallest);
 }
-
-
-//5
-static void SquareDifference()
-{
-
-}
-
 
 
 
@@ -168,7 +181,7 @@ static void SquareDifference()
 void WriteIntro()
 {
 Console.WriteLine("This is a program that will demonstrate the solution to five Project Euler problems");
-Console.Write("1. Multiples of 3 or 5\n2. Even Fibonacci Numbers\n3. Largest Palindrome Product\n4. Smallest Multiple\n5. Sum Square Difference\nPlease select a problem to be demonstrated: ");
+Console.Write("1. Multiples of 3 or 5\n2. Even Fibonacci Numbers\n3. Largest Palindrome Product\n4. Smallest Multiple\nPlease select a problem to be demonstrated: ");
 }
 
 // reads int between the max and min if fail rewrites intro and tries again
